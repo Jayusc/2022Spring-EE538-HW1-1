@@ -8,5 +8,9 @@
 
 // Add your own tests in this file
 TEST(Q2_Student, ReturnIntro) {
-  EXPECT_EQ(true, true);
+  CPPLib q2test;
+  std::vector<int> inputs = {};
+  EXPECT_EQ(q2test.findave(inputs), INT32_MIN);
+  inputs.pushback = {1,2,3,4}
+  EXPECT_EQ(q2test.findave(inputs), 2.50);
 }
