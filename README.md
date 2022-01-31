@@ -129,8 +129,8 @@ What does it mean when we say that the **Heap Sort (HS)** algorithm is asymptoti
 
 
 Answer:
-5,or 135 if it is a multiple choice.
-The run-time complexity of HS is O(nlogn), while for BS is O(n^2), no matter how big or small n is,given the input is randomly ordered, nlogn is always less than n^2.
+3
+The run-time complexity of HS is O(nlogn), while for BS is O(n^2). When n is big, nlogn is always less than n^2, nevertheless, it's hard to compare them for small size inputs.
 
 ## Question 5 (15 Points. Easy)
 
