@@ -88,7 +88,7 @@ i = n, j >> n^3 - n
 
 from i = 1 to n, 
 operation time: sum of n^3 
-run-time complexity: O(n^3)
+run-time complexity: O(n^4)
 
 ```cpp
 int Example4(int n) {
@@ -110,8 +110,8 @@ Answer:
 inner loop:
 sum of n, n/3, n/9 ,...,1 
 = n*(1-(1/3)^n)/(1-1/3) = O(n)
-outer loop: O(n)
-run-time complexity: O(n^2)
+outer loop: O(logn)
+run-time complexity: O(nlogn)
 
  
 
@@ -129,7 +129,7 @@ What does it mean when we say that the **Heap Sort (HS)** algorithm is asymptoti
 
 
 Answer:
-135,
+5,or 135 if it is a multiple choice.
 The run-time complexity of HS is O(nlogn), while for BS is O(n^2), no matter how big or small n is,given the input is randomly ordered, nlogn is always less than n^2.
 
 ## Question 5 (15 Points. Easy)
@@ -188,3 +188,4 @@ bazel test tests:q7_student_test
 What is the complexity of your implementation?
 
 Answer:
+O(2^n);
