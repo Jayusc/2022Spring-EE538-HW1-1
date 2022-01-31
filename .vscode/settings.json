@@ -123,4 +123,5 @@
   "gtest-adapter.debugConfig": [
     "CodeLLDB"
   ],
+  "C_Cpp.errorSquiggles": "Enabled",
 }

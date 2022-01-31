@@ -13,18 +13,20 @@
 
 Create an account on GitHub and Stack Overflow and paste the link to your profile.
 
-GitHub profile link:
+GitHub profile link:    https://github.com/Jayusc
 
-Stack Overflow profile link:
+Stack Overflow profile link:    https://stackexchange.com/users/24056990/jinghui-zhu
 
 ## Question 2 (20 Points. Medium)
 
 Write a function called **FindAverage**, which returns the average of the inputs of a vector of integers. Use the steps the following steps:
+Assumption: When the input is null, returns INT32_MIN
 1. Clearly specify input and output.
-2. Write some example input and outputs. Try to cover corner cases. Feel free to make reasonable assumptions for the corner cases.
+2. Write some example input and outputs. Try to cover corner cases. Feel free to make reasonable assumptions for the corner cases. 
 3. Implement your algorithm.
 4. Write several unit tests that cover all corner cases, and test your algorithm using bazel.
 You will need to only submit your algorithm implementation and the unit tests.
+
 
 ## Question 3 (20 Points. Medium)
 
@@ -40,6 +42,11 @@ void Example1(int n) {
 ```
 
 Answer:
+i = 1,2,4,8...2^m (m is the number of operations)
+2^m = n
+m = log(n)
+run-time complexity: log(n)
+
 
 ```cpp
 void Example2(int n) {
@@ -55,6 +62,10 @@ void Example2(int n) {
 ```
 
 Answer:
+for i : log(n)
+for j : n
+for k : log(n)
+run-time complexity: O(n*log(n)*log(n))
 
 ```cpp
 void Example3(int n) {
@@ -68,6 +79,16 @@ void Example3(int n) {
 Hint: Note the ```j < i*i*i``` in the inner loop and compute the cube sequence to get the final result.
 
 Answer:
+i = 0, j >> 0^3 - 0
+i = 1, j >> 1^3 - 1
+i = 2, j >> 2^3 - 2
+i = 3, j >> 3^3 - 3
+...
+i = n, j >> n^3 - n
+
+from i = 1 to n, 
+operation time: sum of n^3 
+run-time complexity: O(n^3)
 
 ```cpp
 int Example4(int n) {
@@ -86,6 +107,13 @@ int Example4(int n) {
 Hint: Note the ```i /= 3``` in the outer loop and compute the geometric sequence to get the final result.
 
 Answer:
+inner loop:
+sum of n, n/3, n/9 ,...,1 
+= n*(1-(1/3)^n)/(1-1/3) = O(n)
+outer loop: O(n)
+run-time complexity: O(n^2)
+
+ 
 
 ## Question 4 (10 Points. Easy)
 
@@ -101,6 +129,8 @@ What does it mean when we say that the **Heap Sort (HS)** algorithm is asymptoti
 
 
 Answer:
+135,
+The run-time complexity of HS is O(nlogn), while for BS is O(n^2), no matter how big or small n is,given the input is randomly ordered, nlogn is always less than n^2.
 
 ## Question 5 (15 Points. Easy)
 
