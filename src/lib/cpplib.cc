@@ -1,7 +1,11 @@
 #include "cpplib.h"
+#include "iostream"
 #include "limits"
 
-std::string CPPLib::PrintHelloWorld() { return "**** Hello World ****"; }
+std::string CPPLib::PrintHelloWorld()
+{
+    return "**** Hello World ****";
+}
 
 // NOTE: write your own function declaration q2 here
 double CPPLib::findave(std::vector<int> inputs)
@@ -10,7 +14,7 @@ double CPPLib::findave(std::vector<int> inputs)
     {
         return INT32_MIN;
     }
-    
+
     double result = 0;
     for (int n : inputs)
     {
@@ -25,7 +29,12 @@ double CPPLib::findave(std::vector<int> inputs)
 std::string CPPLib::PrintIntro()
 {
     // Please fill up this function.
-    return "";
+    std::cout << "Jinghui Zhu" << std::endl;
+    std::cout << "jinghui@usc.edu" << std::endl;
+    std::cout << "EE student in USC" << std::endl
+              << "Keyboardlist/Guitarist in rock band" << std::endl;
+
+    return "done";
 }
 
 // Question 6

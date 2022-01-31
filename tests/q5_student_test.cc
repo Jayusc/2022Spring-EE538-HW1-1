@@ -6,6 +6,9 @@
 #include "gtest/gtest.h"
 
 // Add your own tests in this file
-TEST(Q5_Student, ReturnIntro) {
-  EXPECT_EQ(true, true);
+TEST(Q5_Student, ReturnIntro)
+{
+  CPPLib intro;
+  std::string pintro;
+  EXPECT_EQ(intro.PrintIntro(), "done");
 }
