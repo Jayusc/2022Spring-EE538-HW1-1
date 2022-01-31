@@ -41,7 +41,29 @@ std::string CPPLib::PrintIntro()
 std::vector<int> CPPLib::Flatten3DVector(const std::vector<std::vector<std::vector<int> > > &input)
 {
     // Please fill up this function.
-    std::vector<int> res;
+    std::vector<int> res = {INT32_MIN};
+    if (input.size() != 0)
+    {
+        res.clear();
+        for (auto i : input)
+        {
+            if (i.size() == 0)
+            {
+                continue;
+            }
+            for (auto j : i)
+            {
+                if (j.size() == 0)
+                {
+                    continue;
+                }
+                for (auto k : j)
+                {
+                    res.push_back(k);
+                }
+            }
+        }
+    }
     return res;
 }
 
