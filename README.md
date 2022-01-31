@@ -109,9 +109,9 @@ Hint: Note the ```i /= 3``` in the outer loop and compute the geometric sequence
 Answer:
 inner loop:
 sum of n, n/3, n/9 ,...,1 
-= n*(1-(1/3)^n)/(1-1/3) = O(n)
+= n*(1-(1/3)^log3n)/(1-1/3) = O(n^2)
 outer loop: O(logn)
-run-time complexity: O(nlogn)
+run-time complexity: O(n^2*logn)
 
  
 
