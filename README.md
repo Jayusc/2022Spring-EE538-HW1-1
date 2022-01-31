@@ -160,6 +160,8 @@ bazel test tests:q6_student_test
 What is the worst case runtime complexity of your implementation?
 
 Answer:
+A Reminder: When input size is zero, return INT32_MIN;
+worst case runtime complexity: O(n^3)
 
 ## Question 7 (30 Points. Medium)
 
